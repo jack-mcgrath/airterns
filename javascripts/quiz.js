@@ -7,7 +7,7 @@ var names = ["DALTON", "VIVIAN", "TESS", "JACK", "ANDREW", "LAWRENCE", "CARTER",
   for (var i=0; i<names.length; ++i){
     if (choice==names[i]){
       alert("yes u r");
-      a++
+      a++;
     }
   }
   if (a==0){
