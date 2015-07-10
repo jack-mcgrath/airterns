@@ -8,7 +8,7 @@ by Matt Graham
         left: 0;
     }
     to {
-        left: 50%;
+        left: 80%;
     }
 }
 @keyframes infinite-spinning {
@@ -22,7 +22,7 @@ by Matt Graham
         left: 0;
     }
     to {
-        left: 50%;
+        left: 80%;
     }
 }
 @keyframes move
@@ -31,18 +31,50 @@ by Matt Graham
         left: 0;
     }
     to {
-        left: 50%;
+        left: 80%;
+    }
+}
+@keyframes moveright
+{
+    from {
+        right: 0;
+    }
+    to {
+        right: 80%;
+    }
+}
+@-webkit-keyframes moveright
+{
+    from {
+        right: 0;
+    }
+    to {
+        right: 80%;
+    }
+}
+@keyframes infinite-spinningright {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+    from {
+        right: 0;
+    }
+    to {
+        right: 80%;
     }
 }
 
 a#rotator {
     text-decoration: none;
     padding-right: 20px;
-    left: 50%;
+    left: 80%;
     position: absolute;
-    -webkit-animation: move 5s;
-    animation: move 5s;
-    animation: infinite-spinning 100s;
+    -webkit-animation: move 20s;
+    animation: move 20s;
+    animation: infinite-spinning 20s;
 }
 
 a#rotator img {
@@ -55,6 +87,34 @@ a#rotator img {
     }
 
 a#rotator img:hover { 
+    box-shadow: 0 3px 15px #000;
+   
+    -webkit-transform: rotate(360deg); 
+    -moz-transform: rotate(360deg); 
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg); 
+    transform: translate()
+}
+a#rotator2 {
+    text-decoration: none;
+    margin-top: 20px;
+    left: 20%;
+    position: absolute;
+    -webkit-animation: moveright 5s;
+    animation: moveright 10s;
+    animation: infinite-spinningright 10s;
+}
+
+a#rotator2 img {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out; 
+    -o-transition: all 1s ease-in-out; 
+    -ms-transition: all 1s ease-in-out; 
+    border-radius:60px;
+    transition-duration: 1s;
+    }
+
+a#rotator2 img:hover { 
     box-shadow: 0 3px 15px #000;
    
     -webkit-transform: rotate(360deg); 
